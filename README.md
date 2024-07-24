@@ -11,7 +11,7 @@ developing Godot Android plugins.
 You can install the latest version from https://developer.android.com/studio.
 
 * Wechatpay:
-  * Open [plugin/src/main/java/org/godotengine/plugin/android/template/Wechatpay.java] and replace your AppID in line20.
+  * Open [plugin/src/main/java/org/godotengine/plugin/android/template/Wechatpay.java] and replace your AppID in line20 and line33,replace your PartnerID in line34.
   * Now your can use function "WechatPaying" in Godot. When using it, you need to pass in four parameters(prepayid,nonStr,timestamp,sign), all of which are received from your backend server through the network. You can refer to the WeChat payment developer documentation for more information. https://pay.weixin.qq.com/docs/merchant/products/in-app-payment/development.html
 
 * TecentAd:
