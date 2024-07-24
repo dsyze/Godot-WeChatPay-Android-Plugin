@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:node="remove" />
+
+    <application>
+        <!--
+        Plugin metadata:
+
+        - In the `android:name` attribute, the `org.godotengine.plugin.v2` prefix
+        is required so Godot can recognize the project as a valid Godot
+        Android plugin. The plugin name following the prefix should match the value
+        of the plugin name returned by the plugin initializer.
+
+        - The `android:value` attribute should be the classpath to the plugin
+        initializer.
+        -->
+        <activity
+            android:name="org.godotengine.plugin.android.template.WXEntryActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true"
+            android:taskAffinity="com.sports.anatomy3d"
+            android:launchMode="singleTask"
+            tools:ignore="Instantiatable,WrongManifestParent">
+        </activity>
+        <meta-data
+            android:name="org.godotengine.plugin.v2.${godotPluginName}"
+            android:value="${godotPluginPackageName}.GodotAndroidPlugin"/>
+    </application>
+
+</manifest>
