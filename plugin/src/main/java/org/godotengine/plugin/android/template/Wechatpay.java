@@ -30,8 +30,8 @@ public class Wechatpay {
     public void Sendpayinfo(){
 
         PayReq request = new PayReq();
-        request.appId = "wx992058c9e4cd2021";
-        request.partnerId = "1667358221";
+        request.appId = "YourWechatAppid";
+        request.partnerId = "YourPartnerIdid";
         request.prepayId= prepayid;
         request.packageValue = "Sign=WXPay";
         request.nonceStr= nonceStr;
