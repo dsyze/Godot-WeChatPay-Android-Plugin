@@ -12,11 +12,11 @@ You can install the latest version from https://developer.android.com/studio.
 
 * Wechatpay:
   * Open [plugin/src/main/java/org/godotengine/plugin/android/template/Wechatpay.java] and replace your AppID in line20 and line33,replace your PartnerID in line34.
-  * Now your can use function "WechatPaying" in Godot. When using it, you need to pass in four parameters(prepayid,nonStr,timestamp,sign), all of which are received from your backend server through the network. You can refer to the WeChat payment developer documentation for more information. https://pay.weixin.qq.com/docs/merchant/products/in-app-payment/development.html
+  * Now you can use function "WechatPaying" in Godot. When using it, you need to pass in four parameters(prepayid,nonStr,timestamp,sign), all of which are received from your backend server through the network. You can refer to the WeChat payment developer documentation for more information. https://pay.weixin.qq.com/docs/merchant/products/in-app-payment/development.html
 
 * TecentAd:
   * Open [plugin/src/main/java/org/godotengine/plugin/android/template/GodotAndroidPlugin.kt] and replace your AppID in line54.
-  * Now your can use function "interAd" in Godot. When using it, you need to pass in one parameters(AdId),you can get this on Ad platform:https://adnet.qq.com/
+  * Now you can use function "interAd" in Godot. When using it, you need to pass in one parameters(AdId),you can get this on Ad platform:https://adnet.qq.com/
 
 * Copy & Paste:
   * You can use function "copy" by  pass in one String you wanna copy. And function "paste" will return text from the clipboard.
